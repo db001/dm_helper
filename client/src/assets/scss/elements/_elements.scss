@@ -1,0 +1,45 @@
+a {
+	color: $ghost-white;
+	font-weight: bold;
+	text-decoration: none;
+
+	&:not([class*="btn"]) {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+input:not([type]),
+input[type="text"]:not(.browser-default),
+input[type="password"]:not(.browser-default),
+input[type="email"]:not(.browser-default),
+input[type="url"]:not(.browser-default),
+input[type="time"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
+input[type="datetime"]:not(.browser-default),
+input[type="datetime-local"]:not(.browser-default),
+input[type="tel"]:not(.browser-default),
+input[type="number"]:not(.browser-default),
+input[type="search"]:not(.browser-default),
+textarea.materialize-textarea {
+	&[type="text"],
+	&[type="number"] {
+		color: $ghost-white;
+		border-bottom: 1px solid $ghost-white;
+		box-shadow: 0 1px 0 0 $ghost-white;
+
+		&:focus {
+			border-bottom: 1px solid $medium-carmine;
+			box-shadow: 0 1px 0 0 $medium-carmine;
+		}
+	}
+
+	&.valid {
+		box-shadow: 0 1px 0 0 $cadet-blue;
+	}
+}
+
+button {
+	font-family: "Montserrat", sans-serif;
+}

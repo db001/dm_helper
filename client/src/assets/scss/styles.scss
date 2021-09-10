@@ -1,0 +1,15 @@
+// Settings – Preprocessor variables and methods (no actual CSS output)
+// Tools – Mixins and functions (no actual CSS output)
+// Generic – CSS resets which might include Eric Meyer’s reset, Normalize.css, or your own batch of code
+// Elements – Single HTML element selectors without classes
+// Objects – Classes for page structure typically following the OOCSS methodology
+// Components – Aesthetic classes for styling any & all page elements (often combined with the structure of object classes)
+// Trumps - The most specific styles for overriding anything else in the triangle
+
+@import "./settings/colours";
+
+@import "./generic/generic";
+@import "./generic/buttons";
+@import "./generic/messages";
+@import "./elements/elements";
+@import "./components/header";

@@ -1,0 +1,10 @@
+@import "../assets/scss/styles.scss";
+
+body {
+	background-attachment: fixed;
+	background-image: url("../assets/images/backgrounds/dnd-bg.jpg");
+	background-position: right;
+	background-size: cover;
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+}

@@ -1,0 +1,21 @@
+nav {
+	background-color: $gunmetal;
+
+	.nav-wrapper {
+		align-items: center;
+		display: flex;
+
+		ul {
+			margin-left: auto;
+		}
+	}
+
+	.brand-logo {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	h3 {
+		margin: 0;
+	}
+}

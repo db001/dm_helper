@@ -1,0 +1,14 @@
+.btn,
+.btn-small,
+.btn-large {
+	background-color: $cadet-blue;
+
+	&:hover {
+		background-color: darken($cadet-blue, 10);
+	}
+
+	&-warning {
+		background-color: $medium-carmine;
+		color: white;
+	}
+}
