@@ -99,12 +99,9 @@ class CampaignDetails extends Component {
 				},
 				data,
 			});
-			// const response = await axios.delete(
-			// 	`/api/players/campaign/remove/${player_id}`
-			// );
-			console.log(response.data);
-			this.fetchPlayersInCampaign(campaign_id);
-			this.fetchOtherPlayers(this.state.campaign_id);
+			if (response) {
+				window.location.reload(true);
+			}
 		} catch (error) {
 			console.log(error);
 		}
@@ -132,9 +129,9 @@ class CampaignDetails extends Component {
 			return (
 				<div>
 					<p>No players currently listed in this campaign</p>
-					<button className="btn" onClick={() => this.fetchOtherPlayers(this.state.campaign_id)}>
+					{/* <button className="btn" onClick={() => this.fetchOtherPlayers(this.state.campaign_id)}>
 						Add Player
-					</button>
+					</button> */}
 				</div>
 			);
 		}
@@ -173,7 +170,7 @@ class CampaignDetails extends Component {
 				<p>Campaign name:</p>
 				{this.state.campaign_name ? <h2>{this.state.campaign_name}</h2> : <h2>Fetching campaign details</h2>}
 				{this.renderPlayers()}
-				<p>Your other players</p>
+				<h4>Your other players</h4>
 				{this.renderOtherPlayers()}
 			</Fragment>
 		);

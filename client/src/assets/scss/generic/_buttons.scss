@@ -10,5 +10,9 @@
 	&-warning {
 		background-color: $medium-carmine;
 		color: white;
+
+		&:hover {
+			background-color: darken($medium-carmine, 10);
+		}
 	}
 }

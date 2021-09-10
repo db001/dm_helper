@@ -41,10 +41,7 @@ function Player(props) {
 							Remove from campaign
 						</button>
 					) : (
-						<button
-							onClick={() => props.addPlayer(props.data.character_id, props.campaign_id)}
-							className="btn"
-						>
+						<button onClick={() => props.addPlayer(props.data.character_id, props.campaign_id)} className="btn">
 							Add to campaign
 						</button>
 					)}
