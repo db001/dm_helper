@@ -37,7 +37,9 @@ class PlayersList extends Component {
 			<div className="row">
 				<div className="col">
 					<h1>Player Characters</h1>
-					<Link to="/players/new">Add a player</Link>
+					<Link to="/players/new" className="btn-small">
+						Add a player
+					</Link>
 					<ul>{this.renderPlayers()}</ul>
 				</div>
 			</div>
