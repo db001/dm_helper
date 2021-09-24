@@ -23,6 +23,9 @@ class Header extends Component {
 					<li key="players">
 						<Link to="/players">Players</Link>
 					</li>,
+					<li key="NPCs">
+						<Link to="/npcs">NPCs</Link>
+					</li>,
 					<li key="head2">
 						<a href="/api/logout" className="btn-small">
 							Logout
@@ -38,16 +41,8 @@ class Header extends Component {
 		return (
 			<nav className="container-fluid">
 				<div className="nav-wrapper">
-					<Link
-						to={this.props.auth ? "/dashboard" : "/"}
-						href="/"
-						className="logo"
-					>
-						<h3>
-							{this.props.auth
-								? `${userName}'s DM Helper`
-								: `DM Helper`}
-						</h3>
+					<Link to={this.props.auth ? "/dashboard" : "/"} href="/" className="logo">
+						<h3>{this.props.auth ? `${userName}'s DM Helper` : `DM Helper`}</h3>
 					</Link>
 					<ul id="nav-mobile">{this.renderContent()}</ul>
 				</div>

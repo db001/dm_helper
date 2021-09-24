@@ -11,6 +11,8 @@ import CampaignsNew from "./Campaigns/CampaignsNew";
 import CampaignDetails from "./Campaigns/CampaignDetails";
 import PlayersList from "./Players/PlayersList";
 import PlayersNew from "./Players/PlayersNew";
+import NpcList from "./Npcs/NpcList";
+import NpcNew from "./Npcs/NpcNew";
 
 import "./App.scss";
 
@@ -33,6 +35,8 @@ class App extends Component {
 							<Route path="/campaigns/details/:id" component={CampaignDetails} />
 							<Route exact path="/players" component={PlayersList} />
 							<Route exact path="/players/new" component={PlayersNew} />
+							<Route exact path="/npcs" component={NpcList} />
+							<Route exact path="/npcs/new" component={NpcNew} />
 						</div>
 					</div>
 				</BrowserRouter>

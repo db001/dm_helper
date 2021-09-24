@@ -1,0 +1,13 @@
+.player_card-stats {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+
+	li {
+		text-align: center;
+	}
+}
+
+.input-field>label {
+	z-index: -1;
+}
